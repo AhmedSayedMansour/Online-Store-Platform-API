@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29911.84
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStorePlatform", "OnlineStorePlatform.csproj", "{3A9F0628-2E6D-4EE5-AB14-5F46F9F7D457}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStorePlatform", "OnlineStorePlatform\OnlineStorePlatform.csproj", "{238CA002-FC66-41C5-8FF6-6DB2AC9FF6E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A9F0628-2E6D-4EE5-AB14-5F46F9F7D457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A9F0628-2E6D-4EE5-AB14-5F46F9F7D457}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A9F0628-2E6D-4EE5-AB14-5F46F9F7D457}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A9F0628-2E6D-4EE5-AB14-5F46F9F7D457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238CA002-FC66-41C5-8FF6-6DB2AC9FF6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238CA002-FC66-41C5-8FF6-6DB2AC9FF6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238CA002-FC66-41C5-8FF6-6DB2AC9FF6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238CA002-FC66-41C5-8FF6-6DB2AC9FF6E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EB2F10B9-2684-4333-8D8A-A130FCB8EE85}
+		SolutionGuid = {50C61305-1803-4BDF-BA64-35C649C765B9}
 	EndGlobalSection
 EndGlobal
