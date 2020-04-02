@@ -1,4 +1,5 @@
-﻿using OnlineStorePlatform.Models;
+﻿using OnlineStorePlatform.DTO;
+using OnlineStorePlatform.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,17 @@ namespace OnlineStorePlatform.DBContext
             }
             context.Dispose();
             return user.Id;
+        }
+
+        public IEnumerable<UserDTO> getAllUsers()
+        {
+            var context = ApplicationDbContext.Create();
+            return context.Users.Where(x => x.type.Equals("Customer")).ToList().Select(user => new UserDTO
+            {
+                email = user.email,
+                password = user.password,
+                userName = user.userName
+            });
         }
     }
 }

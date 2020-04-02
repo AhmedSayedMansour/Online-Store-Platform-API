@@ -13,12 +13,19 @@ namespace OnlineStorePlatform.Models
         [Key, Column(Order = 0), DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required, Index(IsUnique = true), StringLength(256)]
+        [Required, Index(IsUnique = true), StringLength(256), EmailAddress]
         public String email { get; set; }
 
+        [Required]
         public String password { get; set; }
+        [Required]
         public String userName { get; set; }
+
         public String type { get; set; }
+
+        public User()
+        {
+        }
 
         public User(UserDTO user)
         {
