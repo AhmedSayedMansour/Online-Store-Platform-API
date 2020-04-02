@@ -5,6 +5,6 @@ Using .NET Framework 4.7.2
 ---
 ## API Operations
 
-- Registe.
+- Register.
 - List all registerd users.
 ---
