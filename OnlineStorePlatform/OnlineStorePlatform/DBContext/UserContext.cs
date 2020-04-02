@@ -9,9 +9,10 @@ namespace OnlineStorePlatform.DBContext
 {
     public class UserContext
     {
+        public ApplicationDbContext context;
         public int? addUser(User user)
         {
-            var context = ApplicationDbContext.Create();
+            context = ApplicationDbContext.Create();
             context.Users.Add(user);
             if (context.SaveChanges() == 0)
             {
@@ -24,7 +25,7 @@ namespace OnlineStorePlatform.DBContext
 
         public IEnumerable<UserDTO> getAllUsers()
         {
-            var context = ApplicationDbContext.Create();
+            context = ApplicationDbContext.Create();
             return context.Users.Where(x => x.type.Equals("Customer")).ToList().Select(user => new UserDTO
             {
                 email = user.email,

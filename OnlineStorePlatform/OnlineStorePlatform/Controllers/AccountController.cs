@@ -11,6 +11,8 @@ namespace OnlineStorePlatform.Controllers
 {
     public class AccountController : Controller
     {
+        public UserDTO user;
+        public UserContext myContext;
         // GET: Account
         public ActionResult Index()
         {
@@ -19,8 +21,8 @@ namespace OnlineStorePlatform.Controllers
         [HttpPost]
         public ActionResult Register(String email, String password, String userName)
         {
-            UserDTO user = new UserDTO(email, password, userName);
-            var myContext = new UserContext();
+            user = new UserDTO(email, password, userName);
+            myContext = new UserContext();
             if (myContext.addUser(new User(user)) == null) return Content("ERROR");
             return Content("Created Successfully");
         }

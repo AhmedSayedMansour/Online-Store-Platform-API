@@ -10,6 +10,7 @@ namespace OnlineStorePlatform.Controllers
 {
     public class AdminController : Controller
     {
+        public UserContext myContext;
         // GET: Admin
         public ActionResult Index()
         {
@@ -18,7 +19,8 @@ namespace OnlineStorePlatform.Controllers
         [HttpPost]
         public ActionResult getAllUsers()
         {
-            return View(new UserContext().getAllUsers());
+            myContext = new UserContext();
+            return View(myContext.getAllUsers());
         }
     }
 }
