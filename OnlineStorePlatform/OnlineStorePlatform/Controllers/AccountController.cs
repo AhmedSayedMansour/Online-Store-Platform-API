@@ -1,30 +1,24 @@
 ﻿using OnlineStorePlatform.DBContext;
 using OnlineStorePlatform.DTO;
 using OnlineStorePlatform.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Web.Http;
 
 namespace OnlineStorePlatform.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : ApiController
     {
-        public UserDTO user;
-        public UserContext myContext;
-        // GET: Account
-        public ActionResult Index()
+        public AccountController()
         {
-            return View();
         }
-        [HttpPost]
-        public ActionResult Register(String email, String password, String userName)
+        
+        public IHttpActionResult Register([FromBody]UserDTO user)
         {
-            user = new UserDTO(email, password, userName);
-            myContext = new UserContext();
-            if (myContext.addUser(new User(user)) == null) return Content("ERROR");
-            return Content("Created Successfully");
+            if (!ModelState.IsValid)
+                return BadRequest("Invalid data.");
+            UserContext myContext = new UserContext();
+            if (myContext.addUser(new User(user)) == -1) return BadRequest("this email already rejestered..");
+            return Ok();
         }
+
     }
 }

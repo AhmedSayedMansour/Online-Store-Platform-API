@@ -19,6 +19,10 @@ namespace OnlineStorePlatform
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-        }
+			
+			//return only JSON or only XML
+			//config.Formatters.Remove(config.Formatters.XmlFormatter);
+			//config.Formatters.Remove(config.Formatters.JsonFormatter);
+		}
     }
 }

@@ -9,15 +9,14 @@ namespace OnlineStorePlatform.DBContext
 {
     public class UserContext
     {
-        public ApplicationDbContext context;
-        public int? addUser(User user)
+        public int addUser(User user)
         {
-            context = ApplicationDbContext.Create();
+            ApplicationDbContext context = ApplicationDbContext.Create();
             context.Users.Add(user);
             if (context.SaveChanges() == 0)
             {
                 context.Dispose();
-                return null;
+                return -1;
             }
             context.Dispose();
             return user.Id;
@@ -25,7 +24,7 @@ namespace OnlineStorePlatform.DBContext
 
         public IEnumerable<UserDTO> getAllUsers()
         {
-            context = ApplicationDbContext.Create();
+            ApplicationDbContext context = ApplicationDbContext.Create();
             return context.Users.Where(x => x.type.Equals("Customer")).ToList().Select(user => new UserDTO
             {
                 email = user.email,

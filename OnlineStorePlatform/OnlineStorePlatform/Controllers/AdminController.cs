@@ -1,26 +1,24 @@
 ﻿using OnlineStorePlatform.DBContext;
 using OnlineStorePlatform.DTO;
-using System;
+using OnlineStorePlatform.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 
 namespace OnlineStorePlatform.Controllers
 {
-    public class AdminController : Controller
+    public class AdminController : ApiController
     {
-        public UserContext myContext;
         // GET: Admin
-        public ActionResult Index()
+        public IHttpActionResult getAllUsers()
         {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult getAllUsers()
-        {
-            myContext = new UserContext();
-            return View(myContext.getAllUsers());
+            UserContext myContext = new UserContext();
+            IEnumerable<UserDTO> users = myContext.getAllUsers();
+            if(users.Cast<UserDTO>().Count() == 0)
+                return NotFound();
+            else
+                return Ok(users);
         }
     }
 }
