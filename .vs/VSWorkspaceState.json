@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\OnlineStorePlatform",
+    "\\OnlineStorePlatform\\OnlineStorePlatform",
+    "\\OnlineStorePlatform\\OnlineStorePlatform\\Controllers",
+    "\\OnlineStorePlatform\\OnlineStorePlatform\\DBContext",
+    "\\OnlineStorePlatform\\OnlineStorePlatform\\Models"
+  ],
+  "SelectedNode": "\\OnlineStorePlatform\\OnlineStorePlatform\\Controllers\\AccountController.cs",
+  "PreviewInSolutionExplorer": false
+}
