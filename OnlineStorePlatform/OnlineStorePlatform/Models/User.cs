@@ -32,7 +32,7 @@ namespace OnlineStorePlatform.Models
             this.email = user.email;
             this.password = user.password;
             this.userName = user.userName;
-            this.type = "Customer";
+            this.type = user.type;
         }
     }
 
