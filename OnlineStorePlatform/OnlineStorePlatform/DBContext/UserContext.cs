@@ -13,13 +13,21 @@ namespace OnlineStorePlatform.DBContext
         {
             ApplicationDbContext context = ApplicationDbContext.Create();
             context.Users.Add(user);
-            if (context.SaveChanges() == 0)
+            try
             {
+                if (context.SaveChanges() == 0)
+                {
+                    context.Dispose();
+                    return -1;
+                }
                 context.Dispose();
+                return user.Id;
+            }
+            catch
+            {
                 return -1;
             }
-            context.Dispose();
-            return user.Id;
+            
         }
 
         public IEnumerable<UserDTO> getAllUsers()
@@ -29,8 +37,23 @@ namespace OnlineStorePlatform.DBContext
             {
                 email = user.email,
                 password = user.password,
-                userName = user.userName
+                userName = user.userName,
+                type = user.type
             });
+        }
+
+        public UserDTO getUserByEmailPassword(String email, String password)
+        {
+            ApplicationDbContext context = ApplicationDbContext.Create();
+
+            return context.Users.Where(u => u.email.Equals(email) && u.password.Equals(password)).Select(a => new UserDTO()
+            {
+                email = a.email,
+                userName = a.userName,
+                password = a.password,
+                type = a.type
+            }).FirstOrDefault<UserDTO>();
+            
         }
     }
 }
