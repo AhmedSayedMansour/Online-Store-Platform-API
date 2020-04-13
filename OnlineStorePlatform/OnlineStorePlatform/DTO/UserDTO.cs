@@ -7,7 +7,11 @@ namespace OnlineStorePlatform.DTO
 {
     public class UserDTO
     {
-        public String email, userName, password, type;
+        //public String email, userName, password, type;
+        public String email { get; set; }
+        public String userName { get; set; }
+        public String password { get; set; }
+        public String type { get; set; }
         public UserDTO(String email, String password, String userName, String type)
         {
             this.email = email;
