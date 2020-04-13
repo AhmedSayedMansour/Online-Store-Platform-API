@@ -2,8 +2,9 @@
 
 ---
 ## Requirments
-.NET Framework 4.7.2  
-Visual Studio 2012 or higher(required till Docker added)  
+- .NET Framework 4.7.2  
+- ASP.NET Web API 2  
+- Visual Studio 2013 or higher(required till Docker added)  
 
 ---
 ## API Operations and how to request :-
