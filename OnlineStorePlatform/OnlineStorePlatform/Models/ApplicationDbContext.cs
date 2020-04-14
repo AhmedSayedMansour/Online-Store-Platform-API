@@ -19,5 +19,10 @@ namespace OnlineStorePlatform.Models
             return new ApplicationDbContext();
         }
 
+        public void addUser(User user)
+        {
+            Users.Add(user);
+        }
+
     }
 }

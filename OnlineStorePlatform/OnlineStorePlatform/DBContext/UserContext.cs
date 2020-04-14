@@ -12,7 +12,7 @@ namespace OnlineStorePlatform.DBContext
         public int addUser(User user)
         {
             ApplicationDbContext context = ApplicationDbContext.Create();
-            context.Users.Add(user);
+            context.addUser(user);
             try
             {
                 if (context.SaveChanges() == 0)
