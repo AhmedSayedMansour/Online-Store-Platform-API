@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "35d9bfe1-a013-4a02-8eef-b6194ed07bd5",
+		"name": "Online Store Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all registered users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7I6U4-NBvtQNi4c7EEBu3qKUAzrmU5esXunHhet_2vyP1ik5I48HgmMN1Tdr_Or4YWk05_uheyHKWjXQbqQRKsBEvpw4F9-NhlwvXiLowINbaxHvjzekloRcfcnHSQe-PxwsXNt8htMqu1V3cIqI7gJPnBuVLAK2kNfRLesE5DJhOS1FOjY3NigR9O_5BqCZAUc5ik7PlsCDubwaBFbNwc_uPJoyUi5MmmOHp4U5xEtbjmfK5kHtPEnof2NPwEdqBMypltCJTRr5YkczbCJOQBjCyds4v9QrBMqEFtwnssTFDcLJ1BQ71RjLqO9UfvziKRJqqnTKcJG7F2YGbj4J7KAflyQxbg-a0cA-9oj51jw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51642/api/Admin/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51642",
+					"path": [
+						"api",
+						"Admin",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"HI@gmail.com\",\n    \"userName\": \"HI\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51642/api/Account/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51642",
+					"path": [
+						"api",
+						"Account",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ADMIN@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "00000",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:51642/api/Account/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51642",
+					"path": [
+						"api",
+						"Account",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
