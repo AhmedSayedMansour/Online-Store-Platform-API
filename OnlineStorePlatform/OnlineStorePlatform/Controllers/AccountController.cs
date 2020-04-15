@@ -21,17 +21,11 @@ namespace OnlineStorePlatform.Controllers
             return Ok();
         }
 
-        public IHttpActionResult Login(string email, string password)
+        public UserDTO Login(string email, string password)
         {
-            if (!ModelState.IsValid)
-                return BadRequest("Invalid data.");
             UserContext myContext = new UserContext();
             UserDTO user = myContext.getUserByEmailPassword(email, password);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            return Ok(user);
+            return user;
         }
 
     }
