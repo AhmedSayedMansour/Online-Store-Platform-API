@@ -23,11 +23,19 @@ Options for **Postman** collaboration platform
      - NONE
    - Headers 
      - NONE
+   - Authorization
+     - TYPE : Bearer Token
+     - Token : "Token taken from Login"
 3. Login
    - Request URL : http://localhost:51642/api/Account/Login?email=test@gmail.com&password=123456
    - HTTP Request Method : **POST**
    - Body 
-     - NONE
+      | KEY           | VALUE          |
+      | ------------- |:--------------:|
+      | username      | *your email*   |
+      | password      | *your password*|
+      | grant_type    | *password*     |
    - Headers 
      - NONE
+   - Response : you will find your token use it to access your requested data
 ---
