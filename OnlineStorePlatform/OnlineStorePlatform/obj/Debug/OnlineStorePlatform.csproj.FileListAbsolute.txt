@@ -274,3 +274,15 @@ F:\FCAI\SE2\Assignments\Assignments Implementation\Assignment 2\Online-Store-Pla
 F:\FCAI\SE2\Assignments\Assignments Implementation\Assignment 2\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Host.SystemWeb.xml
 F:\FCAI\SE2\Assignments\Assignments Implementation\Assignment 2\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.xml
 F:\FCAI\SE2\Assignments\Assignments Implementation\Assignment 2\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Cors.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Owin.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\System.Web.Cors.dll
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.xml
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Cors.xml
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.xml
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.OAuth.xml
