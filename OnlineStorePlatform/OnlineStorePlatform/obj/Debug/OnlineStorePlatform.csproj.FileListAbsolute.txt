@@ -168,8 +168,6 @@ D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatfo
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Antlr3.Runtime.pdb
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.csprojAssemblyReference.cache
-D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.Migrations.OnlineStoreDB.resources
-D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.csproj.GenerateResource.cache
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.csproj.CoreCompileInputs.cache
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.csproj.CopyComplete
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.dll
@@ -286,3 +284,5 @@ D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatfo
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Host.SystemWeb.xml
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.xml
 D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.Migrations.OnlineStoreDB.resources
+D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform\obj\Debug\OnlineStorePlatform.csproj.GenerateResource.cache

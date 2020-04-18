@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  onlinestoreplatform:
+    image: ${DOCKER_REGISTRY-}onlinestoreplatform
+    build:
+      context: .\OnlineStorePlatform
+      dockerfile: Dockerfile

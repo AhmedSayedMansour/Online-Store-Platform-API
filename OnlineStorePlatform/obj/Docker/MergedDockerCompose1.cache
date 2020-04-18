@@ -1,0 +1,24 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  onlinestoreplatform:
+    build:
+      args:
+        source: obj/Docker/publish/
+      context: D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform
+      dockerfile: Dockerfile
+    entrypoint: cmd /c "start /B C:\\ServiceMonitor.exe w3svc & C:\\remote_debugger\\x64\\msvsmon.exe
+      /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn
+      /nowowwarn /timeout:2147483646"
+    image: onlinestoreplatform
+    labels:
+      com.microsoft.visualstudio.debuggee.program: C:\app\OnlineStorePlatform.dll
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - target: 80
+    volumes:
+    - C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\Remote
+      Debugger:C:\remote_debugger:ro
+version: '3.4'

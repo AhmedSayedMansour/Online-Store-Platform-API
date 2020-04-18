@@ -1,0 +1,13 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  onlinestoreplatform:
+    build:
+      context: D:\Education\Git\Online-Store-Platform-API\OnlineStorePlatform\OnlineStorePlatform
+      dockerfile: Dockerfile
+    image: onlinestoreplatform
+    ports:
+    - target: 80
+version: '3.4'

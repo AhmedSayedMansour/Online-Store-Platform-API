@@ -26,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -185,9 +186,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202004012257414_OnlineStoreDB.cs" />
-    <Compile Include="Migrations\202004012257414_OnlineStoreDB.designer.cs">
-      <DependentUpon>202004012257414_OnlineStoreDB.cs</DependentUpon>
+    <Compile Include="Migrations\202004181027188_OnlineStoreDB.cs" />
+    <Compile Include="Migrations\202004181027188_OnlineStoreDB.designer.cs">
+      <DependentUpon>202004181027188_OnlineStoreDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -226,6 +227,11 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Dockerfile" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\registry.hub.docker.com_ahmedsayedmansour.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -282,8 +288,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004012257414_OnlineStoreDB.resx">
-      <DependentUpon>202004012257414_OnlineStoreDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004181027188_OnlineStoreDB.resx">
+      <DependentUpon>202004181027188_OnlineStoreDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

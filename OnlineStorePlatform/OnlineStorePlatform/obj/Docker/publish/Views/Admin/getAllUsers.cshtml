@@ -1,0 +1,39 @@
+﻿@model IEnumerable<OnlineStorePlatform.DTO.UserDTO>
+@{
+    ViewBag.Title = "getAllUsers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<h2>Registered Users</h2>
+<table style="width:100%">
+    <tr>
+        <th>User Name</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.userName</td>
+            <td>@user.email</td>
+        </tr>
+    }
+</table>
+
